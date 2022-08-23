@@ -103,7 +103,9 @@ function getPackageInformation(packageManager: string, packageName: string) {
     ? `<code>${sanitizeHtml(packageManager)} ${sanitizeHtml(
         packageName
       )}</code>`.trim()
-    : `${sanitizeHtml(packageManager)} ${sanitizeHtml(packageName)}`.trim();
+    : `<p class="description mx-auto text-3xl text-orange-500 pb-12 max-w-4xl">
+        ${sanitizeHtml(packageManager)} ${sanitizeHtml(packageName)}
+    </p>`.trim();
 }
 
 function getAlternativeHtml(parsedReq: ParsedRequest) {
