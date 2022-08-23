@@ -765,7 +765,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
           input: H(TextInput, {
             value: watermarkText,
             oninput: (val: string) => {
-              setLoadingState({ text: val, overrideUrl: url });
+              setLoadingState({ watermarkText: val, overrideUrl: url });
             },
           }),
         })
