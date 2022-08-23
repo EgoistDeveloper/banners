@@ -103,7 +103,7 @@ function getPackageInformation(packageManager: string, packageName: string) {
     ? `<code>${sanitizeHtml(packageManager)} ${sanitizeHtml(
         packageName
       )}</code>`.trim()
-    : `<p class="description mx-auto text-3xl text-orange-500 pb-12 max-w-4xl">
+    : `<p class="description mx-auto text-4xl text-orange-500 pb-12 max-w-4xl">
         ${sanitizeHtml(packageManager)} ${sanitizeHtml(packageName)}
     </p>`.trim();
 }
