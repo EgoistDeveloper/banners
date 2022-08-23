@@ -101,7 +101,7 @@ function getPackageInformation(packageManager: string, packageName: string) {
 
   return `
     <code>${sanitizeHtml(packageManager)} ${sanitizeHtml(packageName)}</code>
-    `;
+    `.trim();
 }
 
 function getAlternativeHtml(parsedReq: ParsedRequest) {
