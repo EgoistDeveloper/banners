@@ -99,9 +99,11 @@ function getPackageInformation(packageManager: string, packageName: string) {
     return "";
   }
 
-  return `
-    <code>${sanitizeHtml(packageManager)} ${sanitizeHtml(packageName)}</code>
-    `.trim();
+  return packageManager !== ""
+    ? `<code>${sanitizeHtml(packageManager)} ${sanitizeHtml(
+        packageName
+      )}</code>`.trim()
+    : `${sanitizeHtml(packageManager)} ${sanitizeHtml(packageName)}`.trim();
 }
 
 function getAlternativeHtml(parsedReq: ParsedRequest) {
