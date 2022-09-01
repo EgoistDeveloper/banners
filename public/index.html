@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Social Image Generator for Open Source packages - Beyond Code</title>
 
     <link
       rel="icon"
@@ -90,20 +92,13 @@
       property="og:image"
       content="https://og.beyondco.de/Banners.png?theme=dark&md=1&body=Make+your+Open+Source+packages+shine%2C+by+generating+**beautiful**+social+images.&fontSize=175px"
     />
-    <title>Social Image Generator for Open Source packages - Beyond Code</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://beyondco.de/css/default.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./dist/style.css" />
   </head>
-  <body
-    style="
-      background: url('https://beyondco.de/img/monotone_open_source.png') top
-        right no-repeat;
-      background-size: 100% 800px;
-      background-position-x: calc(100% + 0px);
-      background-position-y: -140px;
-    "
-  >
+
+  <body>
     <div class="container">
       <div class="wrapper">
         <a
@@ -139,6 +134,7 @@
             ></path>
           </svg>
         </a>
+
         <header class="text-dark-blue-800 pb-6">
           <a href="https://beyondco.de" class="inline-flex items-center">
             <svg
@@ -172,16 +168,18 @@
                 </clipPath>
               </defs>
             </svg>
-            <p class="ml-4 font-headline text-lg">
+            <p class="ml-4 font-headline text-lg dark:text-gray-400">
               A Beyond<span class="text-hulk-800">Code</span> service
             </p>
           </a>
         </header>
+
         <h1
-          class="text-4xl md:text-5.5xl text-center text-dark-blue-800 font-headline leading-tight"
+          class="text-4xl md:text-5xl text-center text-dark-blue-800 font-headline leading-tight dark:text-gray-300"
         >
           Social images for <br />
-          <p class="inline-block relative text-hulk-800">
+
+          <p class="inline-block relative text-hulk-800 dark:text-gray-400">
             <span class="px-1 absolute top-0 left-0 z-10"
               >Open Source Packages</span
             >
@@ -191,21 +189,24 @@
             >
           </p>
         </h1>
+
         <p
-          class="pt-6 text-lg max-w-2xl mx-auto text-gray-700 leading-relaxed text-center"
+          class="pt-6 text-lg max-w-2xl mx-auto text-gray-700 leading-relaxed text-center dark:text-gray-400"
         >
           You put all your work into creating an awesome Open Source package -
           now it's time to make it shine! Use this generator to create beautiful
           looking social images for your package.
         </p>
+
         <div class="pt-24" id="app">
           <em>Loading...</em>
         </div>
       </div>
     </div>
+
     <footer>
       <p
-        class="pt-12 text-sm max-w-2xl mx-auto text-gray-700 leading-relaxed text-center"
+        class="pt-12 text-sm max-w-2xl mx-auto text-gray-700 leading-relaxed text-center dark:text-gray-400"
       >
         <a class="underline" href="https://heroicons.com/">Heroicons</a> and
         <a class="underline" href="https://www.heropatterns.com/"
@@ -213,7 +214,9 @@
         >
         are designed by Steve Schoger.
       </p>
-      <div class="border-b border-opacity-25 pt-16"></div>
+
+      <div class="border-b border-opacity-25 border-gray-400 pt-16"></div>
+
       <div
         class="container mx-auto flex flex-col items-center justify-center pt-16"
       >
@@ -250,8 +253,9 @@
             </defs>
           </svg>
         </div>
+
         <ul
-          class="flex flex-wrap font-medium text-dark-blue-800 pb-8 justify-center max-w-xl"
+          class="flex flex-wrap font-medium text-dark-blue-800 pb-8 justify-center max-w-xl dark:text-gray-600"
         >
           <li>
             <a href="https://beyondco.de/news">News</a>
@@ -286,6 +290,7 @@
             <a href="https://beyondco.de/disclaimer">Disclaimer</a>
           </li>
         </ul>
+
         <p class="pt-8 text-gun-grey-400 text-sm text-center">
           Beyond Code GmbH, An der Lingenmühle 10, 41061 Mönchengladbach,
           Germany<br />
@@ -293,7 +298,9 @@
           VAT ID: DE315110518 / Managing Partners: Marcel Pociot, Sebastian
           Schlein
         </p>
-        <div class="py-8 flex">
+
+        <!-- Social Icons -->
+        <div class="py-8 flex social-icons">
           <a href="https://twitter.com/beyondcode" target="_blank">
             <svg
               class="w-6 h-6"
@@ -330,7 +337,11 @@
             </svg>
           </a>
 
-          <a href="https://github.com/beyondcode" target="_blank" class="ml-8">
+          <a
+            href="https://github.com/beyondcode"
+            target="_blank"
+            class="ml-8 github"
+          >
             <svg
               class="w-6 h-6"
               viewBox="0 0 18 18"
@@ -390,10 +401,12 @@
         </div>
       </div>
     </footer>
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/dot-dom@0.3.0/dotdom.min.js"
     ></script>
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/copee@1.0.6/dist/copee.umd.js"
