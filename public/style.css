@@ -285,6 +285,10 @@ img {
   border-color: #ddd;
 }
 
+.image-wrapper img {
+  border-radius: 10px;
+}
+
 select,
 input {
   height: 40px;
