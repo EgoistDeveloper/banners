@@ -121,7 +121,6 @@ button:hover {
   display: inline-flex;
   height: 40px;
   outline: none;
-  border: 1px solid #eaeaea;
   font-size: 12px;
   text-transform: uppercase;
   user-select: none;
@@ -137,15 +136,28 @@ button:hover {
   min-width: 100%;
 }
 
+.select-wrapper select {
+  border: 1px solid #eaeaea !important;
+}
+
+.select-wrapper .select-arrow {
+  border: 1px solid #eaeaea;
+  color: #000;
+}
+
 .select-wrapper:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-color: #ddd;
 }
 
 .select-wrapper.small {
-  height: 30px;
-  min-width: 100px;
-  width: 100px;
+  min-width: 95px;
+  width: 95px;
+  margin-right: 10px;
+}
+
+.select-wrapper.small:last-child {
+  margin-right: 0;
 }
 
 .select-arrow {
@@ -271,6 +283,11 @@ img {
 .image-wrapper:hover {
   box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
   border-color: #ddd;
+}
+
+select,
+input {
+  height: 40px;
 }
 
 @media (max-width: 1000px) {
