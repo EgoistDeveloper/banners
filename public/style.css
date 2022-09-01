@@ -384,6 +384,10 @@ img {
   .github-corner svg {
     fill: #2a2d3b !important;
   }
+
+  .image-wrapper {
+    background: #2a2d3b;
+  }
 }
 
 @media (prefers-color-scheme: light) {
