@@ -363,6 +363,7 @@ input {
 
   .select-wrapper .select-arrow {
     background: #2a2d3b;
+    border: 1px solid #2a2d3b;
     border-left: 1px solid #444756;
     color: #5f6a9b;
   }
@@ -404,6 +405,11 @@ input {
 
   .image-wrapper {
     background: #2a2d3b;
+  }
+
+  .toast-inner {
+    background: #2a2d3b;
+    color: #d5d5d5;
   }
 }
 
