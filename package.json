@@ -5,7 +5,7 @@
   },
   "scripts": {
     "watch": "npx tailwindcss -i ./public/style.css -o ./public/dist/style.css --watch",
-    "build": "tsc -p api/tsconfig.json && tsc -p web/tsconfig.json"
+    "build": "tsc -p api/tsconfig.json && tsc -p web/tsconfig.json && npx tailwindcss -i ./public/style.css -o ./public/dist/style.css"
   },
   "dependencies": {
     "chrome-aws-lambda": "2.1.1",
